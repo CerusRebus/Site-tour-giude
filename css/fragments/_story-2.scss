@@ -1,0 +1,48 @@
+// STORY-2
+.story-2{
+  border-top: 1px solid $grey-bottom;
+  border-bottom: 1px solid $grey-bottom;
+  @include btn-css;
+  @include btn-effect;
+  .img{
+    @extend %img-css;
+  }
+  @media screen and (max-width: 575px) {
+    &{
+      .btn{
+        margin: 2rem 0rem;
+      }
+      .img{
+        max-height: 500px;
+      }
+    }
+  }
+  @media screen and (min-width: 576px) {
+    &{
+      .img{
+        max-height: 460px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &{
+      .img{
+        max-height: 350px;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px){
+    &{
+      .img{
+        max-height: 400px;
+      }
+    }
+  }
+  @media screen and (min-width: 1400px){
+    &{
+      .img{
+        max-height: 500px;
+      }
+    }
+  }
+}

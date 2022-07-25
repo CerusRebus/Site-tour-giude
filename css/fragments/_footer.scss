@@ -1,0 +1,44 @@
+// FOOTER 
+.footer{
+  border-top: 1px solid $grey-bottom;
+  .item{
+    border: 1px solid $grey-footer;
+    border-radius: 50%;
+    &:hover{
+      box-shadow: $box-shadow-grey;
+      transition: .2s linear;
+    }
+    a{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      .icons{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        transition: .2s linear;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      .facebook{
+        width: 30px;
+        height: 30px;
+      }
+      .youtube{
+        width: 40px;
+        height: 40px;
+      }
+      .gmail{
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  .untitle{
+    color: $grey-footer;
+  }
+}

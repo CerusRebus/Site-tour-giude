@@ -1,0 +1,101 @@
+// NAVBAR
+.navbar-light{
+  border-bottom: 2px solid $grey-bottom;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: $black-navbar;
+  &:hover, &.active {
+    color: $black-navbar-active;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .body.lock {
+    overflow: hidden;
+  }
+  .navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: $white-color;
+    &-brand, .nav-link{
+      font-size: 1.25rem !important;
+   }
+  }
+}
+
+$bar-width: 20px;
+$bar-height: 2px;
+$bar-spacing: 5px;
+
+.navbar{
+  z-index: 10;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white-color;
+    border-bottom: 1px solid $grey-bottom;
+    z-index: 10;
+  }
+  .img-navbar{
+    width: 24px;
+    height: 24px;
+    &:hover{
+      animation: shake 1s ease-in-out;
+    }
+  }
+  @keyframes shake{
+    0%, 50%, 100%{
+      transform: rotate(0deg);
+    }
+    10%, 30%{
+      transform: rotate(-10deg);
+    }
+    20%, 40%{
+      transform: rotate(10deg);
+    }
+  }
+  .navbar-toggler{
+    position: relative;
+    width: 30px;
+    height: 24px;
+    border: none;
+    &:focus{
+      box-shadow: $box-shadow-grey;
+    }
+    span{
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      top: 45%;
+      left: 0;
+      display: block;
+      background: $black-navbar;
+      transition: .5s;
+    }
+    span:first-child{
+      top: 4px;
+    }
+    span:last-child{
+      top: 17px;
+    }
+    &[aria-expanded=true]{
+      span{
+        opacity: 0;
+        top: 50%;
+      }
+      span:first-child{
+        opacity: 1;
+        transform: rotate(405deg);
+      }
+      span:last-child{
+        opacity: 1;
+        transform: rotate(-405deg);
+      }
+    }
+  }
+}

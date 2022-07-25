@@ -1,0 +1,81 @@
+// FEATURES
+.features{
+  .icon{
+    width: 55px;
+    height: 55px;
+  }
+  .item{
+    height: 300px;
+    .number{
+      font-size: 14px;
+    }
+    @media screen and (max-width: 575px){
+      &:nth-child(1n){
+        border-bottom: 1px solid $grey-features;
+      }
+      &:nth-child(1n+2){
+        border-top: 1px solid $grey-features;
+      }
+    }
+    @media screen and (min-width: 576px){
+      &:nth-child(1){
+        border-bottom: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+      }
+      &:nth-child(2) {
+        border-bottom: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+      &:nth-child(3) {
+        border-top: 1px solid $grey-features;
+        border-bottom: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+      }
+      &:nth-child(4) {
+        border-top: 1px solid $grey-features;
+        border-bottom: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+      &:nth-child(5) {
+        border-top: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+      }
+      &:nth-child(6) {
+        border-top: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+    }
+    @media screen and (min-width: 768px){
+      &:nth-child(1){
+        border-bottom: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+      }
+      &:nth-child(2) {
+        border-right: 1px solid $grey-features;
+        border-bottom: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+      &:nth-child(3) {
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+      &:nth-child(4) {
+        border-top: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+        border-bottom: none;
+        border-left: none;
+      }
+      &:nth-child(5) {
+        border-top: 1px solid $grey-features;
+        border-right: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+      &:nth-child(6) {
+        border-top: 1px solid $grey-features;
+        border-left: 1px solid $grey-features;
+      }
+    }
+  }
+}

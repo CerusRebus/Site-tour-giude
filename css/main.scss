@@ -1,0 +1,36 @@
+// root
+@import 'fragments/root';
+
+@import "../splide-4.0.7/dist/css/splide.min.css";
+@import "../splide-4.0.7/dist/css/themes/splide-default.min.css";
+
+*{
+  font-family: $font-primary;
+}
+p{
+  text-align: justify;
+}
+
+// navbar
+@import 'fragments/navbar';
+
+// header
+@import 'fragments/header';
+
+// main - story-1
+@import 'fragments/story-1';
+
+// main - story-2
+@import 'fragments/story-2';
+
+// main - gallery
+@import 'fragments/gallery';
+
+// main - features
+@import 'fragments/features';
+
+// main - feedback
+@import 'fragments/feedback';
+
+//footer
+@import "fragments/footer";

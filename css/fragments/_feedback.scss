@@ -1,0 +1,79 @@
+//FEEDBACK
+.feedback{
+  border-bottom: 1px solid $grey-bottom;
+  .row .input{
+    position: relative;
+  }
+  .form-control:focus{
+    border-color: $border-color-form;
+    box-shadow: $box-shadow-grey;
+  }
+  .row .input label{
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+  }
+  .row .input input:focus~label,
+  .row .input input:valid~label{
+    top: -30px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .support{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .form-check-input{
+    width: 13px;
+    height: 13px;
+    background-color: rgba(211, 212, 213, .4);
+    &:checked{
+      background-color: $background-grey-radio-check;
+      border-color: grey;
+      box-shadow: $box-shadow-grey;
+    }
+    &:active{
+      border-color: grey;
+      box-shadow: $box-shadow-grey;
+    }
+    &:focus{
+      border-color: grey;
+      box-shadow: $box-shadow-grey;
+    }
+  }
+  .form-select{
+    background: none;
+    &:focus{
+      border-color: $border-color-form;
+      box-shadow: $box-shadow-grey;
+    }
+  }
+  .select{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 45%;
+      right: 10px;
+      z-index: 1;
+      display: block;
+      border-style: solid;
+      border-width: 7px 3.5px 0 3.5px;
+      border-color: #000 transparent transparent transparent;
+    }
+  }
+  .checkbox{
+    &:focus{
+      border-color: grey;
+      box-shadow: none;
+    }
+    &:checked{
+      box-shadow: $box-shadow-grey;
+    }
+  }
+  @include btn-css;
+  @include btn-effect;
+}
