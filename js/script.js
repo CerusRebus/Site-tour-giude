@@ -40,7 +40,7 @@ $(function () {
     burgerBtn.on('click', function (e) {
        if (!$(this).hasClass('collapsed')) {
            body.addClass('lock');
-           $('.navbar-collapse').animate({
+           $('.navbar-collapse.collapsing').animate({
                height: '100vh',
            }, {
                duration: 'slow',

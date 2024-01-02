@@ -11,7 +11,7 @@ $border-color-form: #ced4da;
 $background-grey-radio-check: rgb(211, 212, 213);
 $grey-footer: #4d4d4d;
 
-// font-famyly
+// font-family
 $font-primary: 'Libre Caslon Text', serif;
 
 // btn-mixin
@@ -46,9 +46,8 @@ $font-primary: 'Libre Caslon Text', serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute;
       top: 100%;
-      left: 0px;
+      left: 0;
       width: 100%;
       height: 100%;
       font-size: 50px;

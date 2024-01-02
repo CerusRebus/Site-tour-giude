@@ -1,49 +1,53 @@
-// HEADER
-.header{
+ //HEADER
+.header {
   border-bottom: 1px solid $grey-bottom;
   @include btn-css;
   @include btn-effect;
-  .img-header{
+
+  .img-header {
     @extend %img-css;
   }
+
   @media screen and (max-width: 575px) {
-    &{
-      .btn{
-        margin: 2rem 0rem;
+    & {
+      .btn {
+        margin: 2rem 0;
       }
-      .img-header{
+
+      .img-header {
         max-height: 600px;
         object-position: bottom;
       }
     }
   }
   @media screen and (min-width: 768px) {
-    &{
-      .p1{
+    & {
+      .p1 {
         font-size: 18px;
       }
-      .img-header{
+
+      .img-header {
         max-height: 500px;
       }
     }
   }
-  @media screen and (min-width:992px) {
-    &{
-      .img-header{
+  @media screen and (min-width: 992px) {
+    & {
+      .img-header {
         max-height: 600px;
       }
     }
   }
-  @media screen and (min-width:1200px) {
-    &{
-      .img-header{
+  @media screen and (min-width: 1200px) {
+    & {
+      .img-header {
         max-height: 700px;
       }
     }
   }
-  @media screen and (min-width:1440px) {
-    &{
-      .img-header{
+  @media screen and (min-width: 1440px) {
+    & {
+      .img-header {
         max-height: 800px;
       }
     }

@@ -80,7 +80,7 @@ p {
   border: none;
 }
 .navbar .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+  box-shadow: none;
 }
 .navbar .navbar-toggler span {
   position: absolute;
@@ -141,9 +141,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
   font-size: 50px;
@@ -158,7 +157,7 @@ p {
 }
 @media screen and (max-width: 575px) {
   .header .btn {
-    margin: 2rem 0rem;
+    margin: 2rem 0;
   }
   .header .img-header {
     max-height: 600px;
@@ -220,9 +219,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
   font-size: 50px;
@@ -295,9 +293,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
   font-size: 50px;
@@ -596,9 +593,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
   font-size: 50px;
